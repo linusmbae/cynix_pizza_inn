@@ -71,4 +71,24 @@ margin-left: 25px;
 {
   background-color: white;
 }
+.jumbotron .row .col-sm-2:hover
+{
+  color: green;
+}
+.jumbotron #rowhover1 .col-sm-2:hover
+{
+  color: white;
+}
+.jumbotron #rowhover .col-sm-2:hover
+{
+  color: white;
+}
+.jumbotron #rowhover1 .col-sm-2
+{
+  margin-left: 12%;
+}
+.jumbotron #rowhover .col-sm-2
+{
+  margin-left: 6%;
+}
 /*pizza selection ends*/
