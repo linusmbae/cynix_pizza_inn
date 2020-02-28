@@ -1,9 +1,13 @@
+/*body background starts*/
 body
 {
   background-image: url("../images/2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
+/*body background ends*/
+/*navigation bar starts*/
 .card-header
 {
   position: sticky;
@@ -43,6 +47,8 @@ body
   border-radius: 10px;
   margin: 0;
 }
+/*navigation bar ends*/
+/*pizza selection starts*/
 .jumbotron h2
 {
   text-align: center;
@@ -59,8 +65,10 @@ body
 {
 text-align: center;
 font-weight: bold;
+margin-left: 25px;
 }
 #row
 {
   background-color: white;
 }
+/*pizza selection ends*/
