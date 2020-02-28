@@ -2,32 +2,49 @@
 $(document).ready(function()
 {
 /*regularpizza function start*/
-  function Regularpizza(size)
+  function Regularpizza(regula)
   {
     this.regularSize=regula;
     this.regularCost=[];
   }
-  function Cost(shillings)
+  function Costregular(shillings)
   {
-    this.shs=shillings;
+    this.regshs=shillings;
   }
   var regula=new Regularpizza("regular");
-  var pesaReg=new Cost(200);
+  var pesaReg=new Costregular(200);
 $("#regular").click(function()
 {
   regula.regularCost.push(pesaReg);
-  var total=regula.regularCost[0].shs;
+  var total=regula.regularCost[0].regshs;
   alert(total);
 });
 /*regularpizza function ends*/
+/*mediumpizza function starts*/
+function Mediumpizza(medium)
+{
+  this.mediumSize=medium;
+  this.mediumCost=[];
+}
+function Costmedium(mediumShillings)
+{
+  this.medshs=mediumShillings;
+}
+var media=new Mediumpizza("Medium");
+var pesaMed=new Costmedium(500);
 $("#medium").click(function()
 {
-  alert("medium");
+  media.mediumCost.push(pesaMed);
+  var totalMed=media.mediumCost[0].medshs;
+  alert(totalMed);
 });
+/*mediumpizza function ends*/
+/*largepizza function starts*/
 $("#large").click(function()
 {
   alert("large");
 });
+/*largepizza function ends*/
 $("#mega").click(function()
 {
   alert("mega");
