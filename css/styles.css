@@ -1,0 +1,35 @@
+.container
+{
+  background-image: url("../images/2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-header
+{
+  position: sticky;
+  background-color: blue;
+}
+.card-header a
+{
+  font-size: 150%;
+  background-color: gray;
+  border-bottom: solid #A9A9A9;
+}
+.card-header a:hover
+{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-bottom: solid #D3D3D3;
+}
+.card-header ul
+{
+  margin-left: 70%;
+  margin-top: -50px;
+}
+.card-header h1
+{
+    color: gold;
+    font-weight: bold;
+    font-family: Black Ops One ;
+}
