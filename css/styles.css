@@ -74,14 +74,17 @@ margin-left: 25px;
 .jumbotron .row .col-sm-2:hover
 {
   color: green;
+  cursor: pointer;
 }
 .jumbotron #rowhover1 .col-sm-2:hover
 {
   color: white;
+  cursor: pointer;
 }
 .jumbotron #rowhover .col-sm-2:hover
 {
   color: white;
+  cursor: pointer;
 }
 .jumbotron #rowhover1 .col-sm-2
 {
@@ -96,3 +99,24 @@ margin-left: 25px;
   margin-left: 42%;
 }
 /*pizza selection ends*/
+/*checkout starts*/
+#checkout
+{
+  text-align: center;
+}
+#checkout p
+{
+  font-family: Allerta Stencil;
+  font-size:50px;
+}
+#rowAdd
+{
+  background-color: transparent;
+}
+#rowAdd input
+{
+  width: 300px;
+  margin-left: 380px;
+  text-align: center;
+}
+/*checkout ends*/
