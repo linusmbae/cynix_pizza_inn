@@ -1,4 +1,4 @@
-.container
+body
 {
   background-image: url("../images/2.png");
   background-repeat: no-repeat;
@@ -32,4 +32,13 @@
     color: gold;
     font-weight: bold;
     font-family: Black Ops One ;
+    margin-top: -45px;
+    margin-left: 50px;
+}
+.card-header img
+{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin: 0;
 }
