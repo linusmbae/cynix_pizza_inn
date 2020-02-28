@@ -60,3 +60,7 @@ body
 text-align: center;
 font-weight: bold;
 }
+#row
+{
+  background-color: white;
+}
