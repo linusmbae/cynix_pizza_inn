@@ -49,6 +49,12 @@ body
 }
 /*navigation bar ends*/
 /*pizza selection starts*/
+.jumbotron p
+{
+  float: right;
+  margin-top: -50px;
+  font-family: Allerta Stencil;
+}
 .jumbotron h2
 {
   text-align: center;
@@ -104,10 +110,11 @@ margin-left: 25px;
 {
   text-align: center;
 }
-#checkout p
+.jumbotron #payable
 {
   font-family: Allerta Stencil;
   font-size:50px;
+  margin-right: 450px;
 }
 #rowAdd
 {
