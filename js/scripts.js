@@ -102,43 +102,186 @@ $("#Pepperoni").click(function()
   $("#displayTopping").append(totalpep);
 });
 /*pepperoni topping function ends*/
+/*Mushrooms topping function starts*/
+function Mushrooms(mushrooms)
+{
+  this.toppingMushrooms=mushrooms;
+  this.mushroomsCost=[];
+}
+function Costmushrooms(mushroomsShillings)
+{
+  this.mushroomsshs=mushroomsShillings;
+}
+var mush=new Mushrooms("Mushrooms");
+var pesamushrooms=new Costmushrooms(120);
 $("#Mushrooms").click(function()
 {
-  alert("Mushrooms");
+  mush.mushroomsCost.push(pesamushrooms);
+  var totalmush=mush.mushroomsCost[0].mushroomsshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalmush);
 });
+/*Mushrooms topping function ends*/
+/*Onions topping function starts*/
+function Onions(onions)
+{
+  this.toppingOnions=onions;
+  this.onionsCost=[];
+}
+function Costonions(onionsShillings)
+{
+  this.onionsshs=onionsShillings;
+}
+var onion=new Onions("Onions");
+var pesaonions=new Costonions(100);
 $("#Onions").click(function()
 {
-  alert("Onions");
+  onion.onionsCost.push(pesaonions);
+  var totalonion=onion.onionsCost[0].onionsshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalonion);
 });
+/*Onions topping function ends*/
+/*Sausage topping function starts*/
+function Sausage(sausage)
+{
+  this.toppingSausage=sausage;
+  this.sausageCost=[];
+}
+function Costsausage(sausageShillings)
+{
+  this.sausageshs=sausageShillings;
+}
+var sausag=new Sausage("Sausage");
+var pesasausage=new Costsausage(110);
 $("#Sausage").click(function()
 {
-  alert("Sausage");
+  sausag.sausageCost.push(pesasausage);
+  var totalsausag=sausag.sausageCost[0].sausageshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalsausag);
 });
+/*Sausage topping function ends*/
+/*Bacon topping function starts*/
+function Bacon(bacon)
+{
+  this.toppingBacon=bacon;
+  this.baconCost=[];
+}
+function Costbacon(baconShillings)
+{
+  this.baconshs=baconShillings;
+}
+var bac=new Bacon("Bacon");
+var pesabacon=new Costbacon(180);
 $("#Bacon").click(function()
 {
-  alert("Bacon");
+  bac.baconCost.push(pesabacon);
+  var totalbacon=bac.baconCost[0].baconshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalbacon);
 });
-
+/*Bacon topping function ends*/
+/*cheese topping function starts*/
+function Cheese(cheese)
+{
+  this.toppingCheese=cheese;
+  this.cheeseCost=[];
+}
+function Costcheese(cheeseShillings)
+{
+  this.cheeseshs=cheeseShillings;
+}
+var chees=new Cheese("cheese");
+var pesacheese=new Costcheese(200);
 $("#cheese").click(function()
 {
-  alert("Extra cheese");
+  chees.cheeseCost.push(pesacheese);
+  var totalcheese=chees.cheeseCost[0].cheeseshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalcheese);
 });
+/*cheese topping function ends*/
+/*olives topping function starts*/
+function Olives(olives)
+{
+  this.toppingOlives=olives;
+  this.olivesCost=[];
+}
+function Costolives(olivesShillings)
+{
+  this.olivesshs=olivesShillings;
+}
+var olive=new Olives("olives");
+var pesaolives=new Costolives(190);
 $("#olives").click(function()
 {
-  alert("Black olives");
+  olive.olivesCost.push(pesaolives);
+  var totalolive=olive.olivesCost[0].olivesshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalolive);
 });
+/*olives topping function ends*/
+/*peppers topping function starts*/
+function Peppers(peppers)
+{
+  this.toppingPeppers=peppers;
+  this.peppersCost=[];
+}
+function Costpeppers(peppersShillings)
+{
+  this.peppersshs=peppersShillings;
+}
+var pepper=new Peppers("peppers");
+var pesapeppers=new Costpeppers(150);
 $("#peppers").click(function()
 {
-  alert("Green peppers");
+  pepper.peppersCost.push(pesapeppers);
+  var totalpepper=pepper.peppersCost[0].peppersshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalpepper);
 });
+/*peppers topping function ends*/
+/*Pineapple topping function starts*/
+function Pineapple(pineapple)
+{
+  this.toppingPineapple=pineapple;
+  this.pineappleCost=[];
+}
+function Costpineapple(pineappleShillings)
+{
+  this.pineappleshs=pineappleShillings;
+}
+var pine=new Pineapple("pineapple");
+var pesapineapple=new Costpineapple(170);
 $("#Pineapple").click(function()
 {
-  alert("Pineapple");
+  pine.pineappleCost.push(pesapineapple);
+  var totalpine=pine.pineappleCost[0].pineappleshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalpine);
 });
+/*Pineapple topping function ends*/
+/*Spinach topping function starts*/
+function Spinach(spinach)
+{
+  this.toppingSpinach=spinach;
+  this.spinachCost=[];
+}
+function Costspinach(spinachShillings)
+{
+  this.spinachshs=spinachShillings;
+}
+var spinac=new Spinach("Spinach");
+var pesaspinach=new Costspinach(80);
 $("#Spinach").click(function()
 {
-  alert("Spinach");
+  spinac.spinachCost.push(pesaspinach);
+  var totalspinac=spinac.spinachCost[0].spinachshs;
+  $("#displayTopping").empty();
+  $("#displayTopping").append(totalspinac);
 });
+/*Spinach topping function ends*/
 /*crust crispy function starts*/
 function Crispy(crispy)
 {
