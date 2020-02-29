@@ -159,14 +159,46 @@ $("#Crispy").click(function()
   $("#displayCrust").append(totalcrispy);
 });
 /*crust crispy function ends*/
+/*crust stuffed function starts*/
+function Stuffed(stuffed)
+{
+  this.crustStuffed=stuffed;
+  this.stuffedCost=[];
+}
+function Coststuffed(stuffedShillings)
+{
+  this.stuffedshs=stuffedShillings;
+}
+var stuff=new Stuffed("Stuffed");
+var pesastuffed=new Coststuffed(150)
 $("#Stuffed").click(function()
 {
-  alert("Stuffed");
+  stuff.stuffedCost.push(pesastuffed);
+  var totalStuffed=stuff.stuffedCost[0].stuffedshs;
+  $("#displayCrust").empty();
+  $("#displayCrust").append(totalStuffed);
 });
+/*crust stuffed function ends*/
+/*Gluten stuffed function starts*/
+function Gluten(gluten)
+{
+  this.crustgluten=gluten;
+  this.glutenCost=[];
+}
+function Costgluten(glutenShillings)
+{
+  this.glutenshs=glutenShillings;
+}
+var glut=new Gluten("Stuffed");
+var pesagluten=new Costgluten(200)
 $("#Gluten").click(function()
 {
-  alert("Gluten");
+  glut.glutenCost.push(pesagluten);
+  var totalgluten=glut.glutenCost[0].glutenshs;
+  $("#displayCrust").empty();
+  $("#displayCrust").append(totalgluten);
 });
+/*Gluten stuffed function ends*/
 
   $("button#placeOrder").click(function()
 {
@@ -174,6 +206,8 @@ $("#Gluten").click(function()
   var tops =parseInt($("#displayTopping").html());
   var crusts=parseInt($("#displayCrust").html());
   var add = pizzas+tops+crusts;
+  $("#heading").show();
+  $("#payables").show();
   $("#payables").empty();
   $("#payables").append(add);
 });

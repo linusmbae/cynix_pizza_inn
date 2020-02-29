@@ -105,25 +105,28 @@ margin-left: 25px;
   margin-left: 42%;
 }
 /*pizza selection ends*/
-/*checkout starts*/
-#checkout
+/*about starts*/
+#about
 {
   text-align: center;
 }
-.jumbotron #payable
+/*about ends*/
+/*pay starts*/
+
+.jumbotron #pay p
 {
-  font-family: Allerta Stencil;
-  font-size:50px;
-  margin-right: 450px;
-}
-#rowAdd
-{
-  background-color: transparent;
-}
-#rowAdd input
-{
-  width: 300px;
-  margin-left: 380px;
+  display: none;
+  float: left;
   text-align: center;
+  margin-top: 1px;
+  margin-left: 45%;
+  font-family: Aclonica;
+  font-size: 200%;
 }
-/*checkout ends*/
+.jumbotron #pay h5
+{
+display: none;
+margin-left: 45%;
+
+}
+/*pay ends*/
