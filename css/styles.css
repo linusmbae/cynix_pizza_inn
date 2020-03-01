@@ -110,6 +110,13 @@ margin-left: 25px;
 {
   text-align: center;
 }
+#about p
+{
+  float: left;
+  margin-left: 0;
+  text-align: left;
+}
+
 /*about ends*/
 /*pay starts*/
 
@@ -186,3 +193,4 @@ margin-left: 40%;
 {
   margin-left: 100px;
 }
+/*about us*/
