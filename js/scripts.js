@@ -385,14 +385,14 @@ $("#delivery").append("<br><br><h5 id='heads'>Total Amount:</h5><br><br><br><p i
                           "<h2>Pay Goods Upon Delivery</h2><br>"+
                           "<h2>Billing Address</h2><br>"+
                           "<div class='contai'>"+
-                          "<form>"+
-                          "<input type='name' class='form-control' placeholder='Name..'><br>"+
-                          "<input type='email' class='form-control' placeholder='Email..'><br>"+
-                          "<input type='address' class='form-control' placeholder='Address'><br>"+
-                          "<input type='city' class='form-control' placeholder='City'><br>"+
+                          "<form action='https://gmail.us19.list-manage.com/subscribe/post?u=7bf61a73df978ad6a44e8e27f&amp;id=ea7f8f85d1' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' class='validate' target='_blank' novalidate>"+
+                          "<input id='fname' type='name' name='NAME' class='form-control' placeholder='Name..'><br>"+
+                          "<input id='fmail' type='email' name='EMAIL' class='form-control' placeholder='Email..'><br>"+
+                          "<input id='faddress' type='address' name='ADDRESS' class='form-control' placeholder='Address'><br>"+
+                          "<input id='fcity' type='city' name='CITY' class='form-control' placeholder='City'><br>"+
+                          "<button class='btn-secondary' id='payDelivery' type='submit'>Continue to Checkout</button>"+
                           "</form>"+
                           "</div>"+
-                          "<button class='btn-secondary' id='payDelivery'>Continue to Checkout</button>"+
                       "</div>");
 });
 $("button#no").click(function()
@@ -402,6 +402,14 @@ $("button#no").click(function()
                           "<h2>Pay Goods Upon Delivery</h2><br>"+
                           "<button class='btn-secondary' id='pickUp'>Continue to Checkout</button>"+
                       "</div>");
+});
+$("#payDelivery").submit(function()
+{
+  var name=$("#fname").val();
+  var email=$("#fmail").val();
+  var address=$("#faddress").val();
+  var city=$("#fcity").val();
+  alert(name+"Thankyou for reaching out to us");
 });
 });
 
