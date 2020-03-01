@@ -392,7 +392,7 @@ $("#delivery").append("<br><br><h5 id='heads'>Total Amount:</h5><br><br><br><p i
                           "<input type='city' class='form-control' placeholder='City'><br>"+
                           "</form>"+
                           "</div>"+
-                          "<button class='btn-secondary'>Continue to Checkout</button>"+
+                          "<button class='btn-secondary' id='payDelivery'>Continue to Checkout</button>"+
                       "</div>");
 });
 $("button#no").click(function()
@@ -400,7 +400,7 @@ $("button#no").click(function()
   $(".col-50").empty();
   $("#locator").append("<div class='col-50'>"+
                           "<h2>Pay Goods Upon Delivery</h2><br>"+
-                          "<button class='btn-secondary'>Continue to Checkout</button>"+
+                          "<button class='btn-secondary' id='pickUp'>Continue to Checkout</button>"+
                       "</div>");
 });
 });
