@@ -126,7 +126,7 @@ margin-left: 25px;
 .jumbotron #pay h5
 {
 display: none;
-margin-left: 45%;
+margin-left: 40%;
 
 }
 .jumbotron .payIput
@@ -155,4 +155,24 @@ margin-left: 45%;
 .contai .btn-primary
 {
   width: 150px;
+}
+::placeholder
+{
+  color: white;
+  font-size: 25px;
+}
+#subm
+{
+  margin-left: 450px;
+  width: 100px;
+}
+#myTot
+{
+  margin-right: 500px;
+  font-family: Aclonica;
+  font-size: 200%;
+}
+#heads
+{
+  margin-left: 450px;
 }

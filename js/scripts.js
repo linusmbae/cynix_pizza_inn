@@ -354,11 +354,18 @@ $("#Gluten").click(function()
   $("#payables").show();
   $("#payables").empty();
   $("#payables").append(add);
-  /*place order function starts*/
-$("#pay").append("<br><br><input type='number' class='payIput'  min='1' max='1000' placeholder='Total Pizzas'>");
 
-  /*place order function starts*/
+  $("#pay").append("<br><br><input type='number' id='payput' class='payIput'  min='1' max='1000' placeholder='Total Pizzas'>"+
+    "<br><br><button class='btn-primary' id='subm'>Submit</button>");
+  $("button#subm").click(function()
+{
+var addPizza=parseInt($("input#payput").val());
+var myTotal=addPizza*add;
+$("#delivery").empty();
+$("#delivery").append("<br><br><h5 id='heads'>Total Amount:</h5><br><br><br><p id='myTot'>"+myTotal+"</p><hr>");
 });
-/*place order function starts*/
+
+});
+/*place order function ends*/
 
 });
