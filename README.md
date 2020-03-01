@@ -21,7 +21,7 @@ Cynix_pizza_inn is a webpage that enables cynix customers make pizza order onlin
 Open my github repository
 click on the live link to view the project/Cynix_pizza_inn.
 ## Link to site
-This is a live link to my site. https://linusmbae.github.io/Cynix_pizza_inn/
+This is a live link to my site. [Cynix_pizza_inn](https://linusmbae.github.io/Cynix_pizza_inn/)
 ## Reach me
 [Email](linusmutugi5178@gmail.com)
 ### License & copyright
