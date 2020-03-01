@@ -343,6 +343,7 @@ $("#Gluten").click(function()
 });
 /*Gluten stuffed function ends*/
 
+/*place order function starts*/
   $("button#placeOrder").click(function()
 {
   var pizzas=parseInt($("#displayPizza").html());
@@ -353,6 +354,11 @@ $("#Gluten").click(function()
   $("#payables").show();
   $("#payables").empty();
   $("#payables").append(add);
+  /*place order function starts*/
+$("#pay").append("<br><br><input type='number' class='payIput'  min='1' max='1000' placeholder='Total Pizzas'>");
+
+  /*place order function starts*/
 });
+/*place order function starts*/
 
 });

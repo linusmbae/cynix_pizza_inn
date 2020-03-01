@@ -129,4 +129,30 @@ display: none;
 margin-left: 45%;
 
 }
+.jumbotron .payIput
+{
+  margin: 0;
+  margin-left: -180px;
+  border: solid black;
+  width: 250px;
+  text-align: center;
+}
 /*pay ends*/
+.contai
+{
+  background-image: url("../images/3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contai input
+{
+  background-color: transparent;
+}
+.contai textarea
+{
+  background-color: transparent;
+}
+.contai .btn-primary
+{
+  width: 150px;
+}
