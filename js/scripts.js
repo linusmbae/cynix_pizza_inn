@@ -417,3 +417,9 @@ $("#payDelivery").submit(function()
 /*place order function ends*/
 
 });
+function myFunction(){
+  var name=document.getElementById("#contactName").value();
+  var email=document.getElementById("#contactEmail").value();
+  var message=document.getElementById("#contactMessage").value();
+  alert("Hello "+name+" we have recieved your email we will reachout soon")
+};
