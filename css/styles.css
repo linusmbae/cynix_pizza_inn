@@ -132,10 +132,11 @@ margin-left: 40%;
 .jumbotron .payIput
 {
   margin: 0;
-  margin-left: -180px;
-  border: solid black;
+  margin-left: -190px;
   width: 250px;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 /*pay ends*/
 .contai
@@ -147,6 +148,7 @@ margin-left: 40%;
 .contai input
 {
   background-color: transparent;
+  text-align: center;
 }
 .contai textarea
 {
@@ -175,4 +177,12 @@ margin-left: 40%;
 #heads
 {
   margin-left: 450px;
+}
+.col-50 h2
+{
+  margin-left: 100px;
+}
+.btn-secondary
+{
+  margin-left: 100px;
 }

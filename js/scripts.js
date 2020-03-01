@@ -355,14 +355,54 @@ $("#Gluten").click(function()
   $("#payables").empty();
   $("#payables").append(add);
 
-  $("#pay").append("<br><br><input type='number' id='payput' class='payIput'  min='1' max='1000' placeholder='Total Pizzas'>"+
-    "<br><br><button class='btn-primary' id='subm'>Submit</button>");
+  $("#pay").append("<br><br><input type='number' id='payput' class='payIput' placeholder='Quantity'>"+
+                    "<br><br><button class='btn-primary' id='subm'>Submit</button>"
+                  );
   $("button#subm").click(function()
 {
 var addPizza=parseInt($("input#payput").val());
 var myTotal=addPizza*add;
 $("#delivery").empty();
-$("#delivery").append("<br><br><h5 id='heads'>Total Amount:</h5><br><br><br><p id='myTot'>"+myTotal+"</p><hr>");
+$("#delivery").append("<br><br><h5 id='heads'>Total Amount:</h5><br><br><br><p id='myTot'>"+myTotal+"</p><hr>"+
+                      "<h4>Do You Want Your Pizza(s) delivered?</h4>"+
+                      "<div class='row' id='locator'>"+
+                        "<div class='col-md-4'>"+
+                          "<button class='btn-primary' id='yes'>Yes</button>"+
+                        "</div>"+
+                          "<div class='col-md-6'>"+
+                            "<button class='btn-primary' id='no'>No</button>"+
+                          "</div>"+
+                      "</div>"
+                     );
+  $("button#yes").click(function()
+{
+  $(".col-50").empty();
+  $("#locator").append("<div class='col-50'>"+
+                          "<h2>Peyment Details:</h2><br>"+
+                          "<h3>Nairobi: Ksh.100</h3><br>"+
+                          "<h3>50km Outside Nairobi: Ksh.200</h3><br>"+
+                          "<h3>Others: Ksh.50 per Km</h3><br>"+
+                          "<h2>Pay Goods Upon Delivery</h2><br>"+
+                          "<h2>Billing Address</h2><br>"+
+                          "<div class='contai'>"+
+                          "<form>"+
+                          "<input type='name' class='form-control' placeholder='Name..'><br>"+
+                          "<input type='email' class='form-control' placeholder='Email..'><br>"+
+                          "<input type='address' class='form-control' placeholder='Address'><br>"+
+                          "<input type='city' class='form-control' placeholder='City'><br>"+
+                          "</form>"+
+                          "</div>"+
+                          "<button class='btn-secondary'>Continue to Checkout</button>"+
+                      "</div>");
+});
+$("button#no").click(function()
+{
+  $(".col-50").empty();
+  $("#locator").append("<div class='col-50'>"+
+                          "<h2>Pay Goods Upon Delivery</h2><br>"+
+                          "<button class='btn-secondary'>Continue to Checkout</button>"+
+                      "</div>");
+});
 });
 
 });
