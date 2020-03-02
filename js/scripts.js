@@ -19,6 +19,8 @@ $("#regular").click(function()
   var total=regula.regularCost[0].regshs;
   $("#displayPizza").empty();
   $("#displayPizza").append(total);
+  $("#displayPizzaName").empty();
+  $("#displayPizzaName").append("Regular");
 
 });
 /*regularpizza function ends*/
@@ -40,6 +42,8 @@ $("#medium").click(function()
   var totalMed=media.mediumCost[0].medshs;
   $("#displayPizza").empty();
   $("#displayPizza").append(totalMed);
+  $("#displayPizzaName").empty();
+  $("#displayPizzaName").append("Medium");
 });
 /*mediumpizza function ends*/
 /*largepizza function starts*/
@@ -60,6 +64,8 @@ $("#large").click(function()
   var totallarg=larger.largeCost[0].largshs;
   $("#displayPizza").empty();
   $("#displayPizza").append(totallarg);
+  $("#displayPizzaName").empty();
+  $("#displayPizzaName").append("Large");
 });
 /*largepizza function ends*/
 /*megapizza function starts*/
@@ -80,6 +86,8 @@ $("#mega").click(function()
   var totalmega=meg.megaCost[0].megashs;
   $("#displayPizza").empty();
   $("#displayPizza").append(totalmega);
+  $("#displayPizzaName").empty();
+  $("#displayPizzaName").append("Mega");
 });
 /*megapizza function ends*/
 /*pepperoni topping function starts*/
@@ -100,6 +108,8 @@ $("#Pepperoni").click(function()
   var totalpep=pepp.pepperoniCost[0].pepperonishs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalpep);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Pepperoni");
 });
 /*pepperoni topping function ends*/
 /*Mushrooms topping function starts*/
@@ -120,6 +130,8 @@ $("#Mushrooms").click(function()
   var totalmush=mush.mushroomsCost[0].mushroomsshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalmush);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Mushroom");
 });
 /*Mushrooms topping function ends*/
 /*Onions topping function starts*/
@@ -140,6 +152,8 @@ $("#Onions").click(function()
   var totalonion=onion.onionsCost[0].onionsshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalonion);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Onion");
 });
 /*Onions topping function ends*/
 /*Sausage topping function starts*/
@@ -160,6 +174,8 @@ $("#Sausage").click(function()
   var totalsausag=sausag.sausageCost[0].sausageshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalsausag);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Sausage");
 });
 /*Sausage topping function ends*/
 /*Bacon topping function starts*/
@@ -180,6 +196,8 @@ $("#Bacon").click(function()
   var totalbacon=bac.baconCost[0].baconshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalbacon);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Bacon");
 });
 /*Bacon topping function ends*/
 /*cheese topping function starts*/
@@ -200,6 +218,8 @@ $("#cheese").click(function()
   var totalcheese=chees.cheeseCost[0].cheeseshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalcheese);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Cheese");
 });
 /*cheese topping function ends*/
 /*olives topping function starts*/
@@ -220,6 +240,8 @@ $("#olives").click(function()
   var totalolive=olive.olivesCost[0].olivesshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalolive);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Olives");
 });
 /*olives topping function ends*/
 /*peppers topping function starts*/
@@ -240,6 +262,8 @@ $("#peppers").click(function()
   var totalpepper=pepper.peppersCost[0].peppersshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalpepper);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Green Pepper");
 });
 /*peppers topping function ends*/
 /*Pineapple topping function starts*/
@@ -260,6 +284,8 @@ $("#Pineapple").click(function()
   var totalpine=pine.pineappleCost[0].pineappleshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalpine);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("PineApple");
 });
 /*Pineapple topping function ends*/
 /*Spinach topping function starts*/
@@ -280,6 +306,8 @@ $("#Spinach").click(function()
   var totalspinac=spinac.spinachCost[0].spinachshs;
   $("#displayTopping").empty();
   $("#displayTopping").append(totalspinac);
+  $("#displayToppingName").empty();
+  $("#displayToppingName").append("Spinach");
 });
 /*Spinach topping function ends*/
 /*crust crispy function starts*/
@@ -300,6 +328,8 @@ $("#Crispy").click(function()
   var totalcrispy=crisp.crispyCost[0].crispyshs;
   $("#displayCrust").empty();
   $("#displayCrust").append(totalcrispy);
+  $("#displayCrustName").empty();
+  $("#displayCrustName").append("Crispy");
 });
 /*crust crispy function ends*/
 /*crust stuffed function starts*/
@@ -319,7 +349,9 @@ $("#Stuffed").click(function()
   stuff.stuffedCost.push(pesastuffed);
   var totalStuffed=stuff.stuffedCost[0].stuffedshs;
   $("#displayCrust").empty();
-  $("#displayCrust").append(totalStuffed);
+  $("#displayCrust").append(totalStuffed);;
+  $("#displayCrustName").empty();
+  $("#displayCrustName").append("Stuffed");
 });
 /*crust stuffed function ends*/
 /*Gluten stuffed function starts*/
@@ -332,14 +364,16 @@ function Costgluten(glutenShillings)
 {
   this.glutenshs=glutenShillings;
 }
-var glut=new Gluten("Stuffed");
+var glut=new Gluten("Gluten");
 var pesagluten=new Costgluten(200)
 $("#Gluten").click(function()
 {
   glut.glutenCost.push(pesagluten);
   var totalgluten=glut.glutenCost[0].glutenshs;
   $("#displayCrust").empty();
-  $("#displayCrust").append(totalgluten);
+  $("#displayCrust").append(totalgluten);;
+  $("#displayCrustName").empty();
+  $("#displayCrustName").append("Gluten");
 });
 /*Gluten stuffed function ends*/
 
@@ -349,13 +383,33 @@ $("#Gluten").click(function()
   var pizzas=parseInt($("#displayPizza").html());
   var tops =parseInt($("#displayTopping").html());
   var crusts=parseInt($("#displayCrust").html());
+
+  var pizzaName=$("#displayPizzaName").html();
+  var topName =$("#displayToppingName").html();
+  var crustName=$("#displayCrustName").html();
   var add = pizzas+tops+crusts;
   $("#heading").show();
   $("#payables").show();
   $("#payables").empty();
   $("#payables").append(add);
-
-  $("#pay").append("<br><br><input type='number' id='payput' class='payIput' placeholder='Quantity'>"+
+  $("#purchased").append("<br><br><div>"+
+                    "<h1>Your order is as follows</h1>"+
+                    "<table>"+
+                        "<tr>"+
+                        "<th>Name</th>"+
+                        "<th>Topping</th>"+
+                        "<th>Crust</th>"+
+                        "</tr>"+
+                        "<tr>"+
+                        "<td>"+pizzaName+"</td>"+
+                        "<td>"+topName+"</td>"+
+                        "<td>"+crustName+"</td>"+
+                        "</tr>"+
+                    "</table>"+
+                    "</div>"
+              );
+  $("#pay").append( 
+                    "<br><br><input type='number' id='payput' class='payIput' placeholder='Quantity' value='1'>"+
                     "<br><br><button class='btn-primary' id='subm'>Submit</button>"
                   );
   $("button#subm").click(function()
@@ -378,7 +432,7 @@ $("#delivery").append("<br><br><h5 id='heads'>Total Amount:</h5><br><br><br><p i
 {
   $(".col-50").empty();
   $("#locator").append("<div class='col-50'>"+
-                          "<h2>Peyment Details:</h2><br>"+
+                          "<h2>Payment Details:</h2><br>"+
                           "<h3>Nairobi: Ksh.100</h3><br>"+
                           "<h3>50km Outside Nairobi: Ksh.200</h3><br>"+
                           "<h3>Others: Ksh.50 per Km</h3><br>"+
@@ -400,7 +454,7 @@ $("button#no").click(function()
   $(".col-50").empty();
   $("#locator").append("<div class='col-50'>"+
                           "<h2>Pay Goods Upon Delivery</h2><br>"+
-                          "<button class='btn-secondary' id='pickUp'>Continue to Checkout</button>"+
+                          "<button class='btn-secondary' onclick='pickUpPizza()' id='pickUpPizza'>Continue to Checkout</button>"+
                       "</div>");
 });
 $("#payDelivery").submit(function()
@@ -411,15 +465,21 @@ $("#payDelivery").submit(function()
   var city=$("#fcity").val();
   alert(name+"Thankyou for reaching out to us");
 });
+
 });
 
 });
 /*place order function ends*/
 
 });
-function myFunction(){
+function myFunction()
+{
   var name=document.getElementById("#contactName").value();
   var email=document.getElementById("#contactEmail").value();
   var message=document.getElementById("#contactMessage").value();
-  alert("Hello "+name+" we have recieved your email we will reachout soon")
+  alert("Hello "+name+" we have recieved your email we will reachout soon");
+};
+function pickUpPizza()
+{
+    alert("Thankyou for reaching out to us. you can pick your pizza at our pizza place.");
 };
